@@ -18,6 +18,6 @@ describe("Survey Model", function(){
         let surveyModel = new SurveyModel();
         let result = surveyModel.verifyCaptchaInput("random");
 
-        expect(result).to.equal("Failed");
+        expect(result).to.equal("Error! Captcha input doesn't matched.");
     });
 });
